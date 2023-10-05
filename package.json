@@ -1,0 +1,29 @@
+{
+  "name": "with-docker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.10.13",
+    "@types/css-modules": "^1.0.2",
+    "eslint-config-custom": "*",
+    "prettier": "^2.8.8",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  },
+  "packageManager": "npm@8.19.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
